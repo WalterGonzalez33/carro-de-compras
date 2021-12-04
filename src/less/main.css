@@ -1,0 +1,167 @@
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/nunito/v20/XRXI3I6Li01BKofiOc5wtlZ2di8HDOUhRTM.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Robot World';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Robot World'), url('https://fonts.cdnfonts.com/s/30249/Robot World.woff') format('woff');
+}
+@font-face {
+  font-family: 'Robot World';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Robot World'), url('https://fonts.cdnfonts.com/s/30249/Robot World Italic.woff') format('woff');
+}
+body {
+  background-color: #0c0c0c;
+  padding: 0;
+  margin: 0;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #2e2d2d;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(18, 124, 18, 0.561);
+  border-radius: 5px;
+}
+.nav {
+  width: 100%;
+  margin-bottom: 25px;
+  height: 150px;
+  background-color: #161515;
+  border-bottom: 1px solid rgba(18, 124, 18, 0.938);
+  box-shadow: -2px 2.5px 4px 6px rgba(55, 197, 124, 0.13);
+  position: sticky;
+  top: 0;
+}
+.nav .cont-nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav .cont-nav .nombre-app {
+  font-size: 45px;
+  font-weight: 400;
+  font-family: 'Robot World', sans-serif;
+  margin-left: 30px;
+  color: rgba(18, 124, 18, 0.671);
+  cursor: pointer;
+  text-shadow: -2.5px 2.5px rgba(55, 197, 124, 0.2);
+  word-spacing: 6px;
+}
+.nav .cont-nav .burbujaNotificasion {
+  width: 24px;
+  height: 24px;
+  background-color: #995454;
+  font-size: 13px;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.856);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 54px;
+  top: 27px;
+  cursor: pointer;
+}
+.nav .cont-nav .carrito {
+  width: 75px;
+  height: 75px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-right: 50px;
+  background-color: rgba(95, 158, 160, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav .cont-nav .carrito .i {
+  font-size: 50px;
+  cursor: pointer;
+  color: rgba(18, 124, 18, 0.938);
+  transition: all 0.4s ease;
+}
+.nav .cont-nav .carrito .i:hover {
+  color: rgba(18, 124, 18, 0.52);
+}
+.section-producto {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.section-producto .container {
+  width: 1100px;
+}
+.section-producto .container .layout {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  color: rgba(27, 167, 27, 0.801);
+}
+.section-producto .container .flex-container {
+  display: flex;
+  flex-flow: row wrap ;
+  width: 100%;
+}
+.section-producto .container .flex-container .tarjet-producto {
+  border-radius: 10px;
+  padding: 10px;
+  width: 300px;
+  height: 470px;
+  background-color: rgba(0, 0, 0, 0.808);
+  border: 1px solid rgba(18, 124, 18, 0.938);
+  margin: 20px;
+}
+.section-producto .container .flex-container .tarjet-producto .img-producto {
+  width: 94%;
+  height: 50%;
+  padding: 8px;
+  border-bottom: 1px solid rgba(18, 124, 18, 0.938);
+}
+.section-producto .container .flex-container .tarjet-producto .name-producto {
+  color: #1ba71b;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.section-producto .container .flex-container .tarjet-producto .price-producto::before {
+  display: inline;
+  content: "$";
+}
+.section-producto .container .flex-container .tarjet-producto .price-producto {
+  color: rgba(27, 167, 27, 0.87);
+  font-size: 23px;
+  font-weight: 400;
+}
+.section-producto .container .flex-container .tarjet-producto .button-producto {
+  width: 110px;
+  background-color: black;
+  border-radius: 5px;
+  border: 1px solid rgba(18, 124, 18, 0.938);
+  color: rgba(27, 167, 27, 0.87);
+  padding: 6px;
+  font-size: 22px;
+  margin-top: 19px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.section-producto .container .flex-container .tarjet-producto .button-producto:hover {
+  color: black;
+  background-color: rgba(27, 167, 27, 0.87);
+}
