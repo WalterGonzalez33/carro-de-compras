@@ -8,7 +8,7 @@ class BubbleAlert extends Component{
     render(){
         const { value } = this.props;
         return(
-            <span>
+            <span className={"burbujaNotificasion"}>
                 {this.getNumber(value)}
             </span>
         )

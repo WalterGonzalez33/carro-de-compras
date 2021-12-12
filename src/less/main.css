@@ -49,6 +49,90 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   justify-content: space-between;
 }
+.nav .cont-nav .resumenCarrito {
+  width: 400px;
+  height: 380px;
+  background-color: #262727;
+  position: absolute;
+  right: 20px;
+  color: black;
+  border: 1px solid rgba(18, 124, 18, 0.561);
+  border-radius: 10px;
+  animation: Carrito 1s ease 0.1s 1 row fill-mode;
+  transition: all 1s ease;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.nav .cont-nav .resumenCarrito .flecha {
+  border-right: 8px solid rgba(18, 124, 18, 0.561);
+  width: 0px;
+  height: 0px;
+  border-left: 8px solid rgba(18, 124, 18, 0.561);
+  border-bottom: 8px solid rgba(18, 124, 18, 0.561);
+  background-color: #262727;
+  position: absolute;
+  top: -8px;
+  right: 55px;
+}
+.nav .cont-nav .resumenCarrito ul {
+  width: 100%;
+  height: 90%;
+  padding: 8px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.nav .cont-nav .resumenCarrito ul::-webkit-scrollbar {
+  width: 10px;
+  background-color: #2e2d2d;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+.nav .cont-nav .resumenCarrito ul::-webkit-scrollbar-track {
+  margin: 5px ;
+}
+.nav .cont-nav .resumenCarrito ul::-webkit-scrollbar-thumb {
+  background-color: rgba(18, 124, 18, 0.561);
+  border-radius: 5px;
+}
+.nav .cont-nav .resumenCarrito ul li {
+  padding-bottom: 4px;
+  height: 110px;
+  text-decoration: none;
+  list-style: none;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  border-bottom: 1px solid rgba(18, 124, 18, 0.561);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+.nav .cont-nav .resumenCarrito ul li .fProductoCarrito {
+  width: 130px;
+  height: 100%;
+}
+.nav .cont-nav .resumenCarrito ul li .nProductoCarrito {
+  color: rgba(18, 124, 18, 0.561);
+  width: 40%;
+  font-size: 23px;
+  text-align: center;
+  font-weight: 500;
+}
+.nav .cont-nav .resumenCarrito ul li .cProductoCarrito {
+  width: 28px;
+  height: 28px;
+  background-color: #995454;
+  font-size: 14px;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.856);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .nav .cont-nav .nombre-app {
   font-size: 45px;
   font-weight: 400;
@@ -85,6 +169,10 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.nav .cont-nav .carrito:active {
+  width: 68px;
+  height: 68px;
 }
 .nav .cont-nav .carrito .i {
   font-size: 50px;
@@ -164,4 +252,12 @@ body::-webkit-scrollbar-thumb {
 .section-producto .container .flex-container .tarjet-producto .button-producto:hover {
   color: black;
   background-color: rgba(27, 167, 27, 0.87);
+}
+@keyframes Carrito {
+  1% {
+    height: 1%;
+  }
+  100% {
+    height: 100%;
+  }
 }
